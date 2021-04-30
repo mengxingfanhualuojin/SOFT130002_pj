@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人收藏</title>
+    <style>
+        .guide:hover{background-color:yellow}
+        .show{
+            border:2px solid;
+            border-color: aqua;
+        }
+    </style>
+    <script>
+        function deleteFirst(){
+            document.getElementById("first").remove();
+        }
+        function deleteSecond(){
+            document.getElementById("second").remove();
+        }
+        function deleteThird(){
+            document.getElementById("third").remove();
+        }
+    </script>
+</head>
+<body>
+<div id="header" style="width: inherit;height: 10%;margin-right: 20px">
+    <a style="font-size: 30px" class="guide" href="首页.html">Art Store</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <a style="font-size: 15px" class="guide" href="登录页.html">登录</a>
+    <span style="font-size: 15px">or</span>
+    <a style="font-size: 15px" class="guide" href="注册页.html">注册</a>
+    <span style="float: right">未登录</span>
+
+</div>
+<hr>
+
+<div style="width: inherit;height: 10%" align="center">
+    <form>
+        <input type="text"><button class="guide" type="button" style="font-size: 10px">搜索</button>
+
+    </form>
+    <form action="">
+        <select>
+            <option>默认排序</option>
+            <option>按热度排序</option>
+            <option>按时间排序</option>
+            <option>按价格排序</option>
+        </select>
+        &nbsp;&nbsp;&nbsp;
+        <select>
+            <option>每页六项</option>
+            <option>每页九项</option>
+            <option>每页十二项</option>
+            <option>每页十六项</option>
+        </select>
+    </form>
+    <button class="guide" type="button" style="font-size: 10px">第一页</button>
+    <button class="guide" type="button" style="font-size: 10px">上一页</button>
+    <button class="guide" type="button" style="font-size: 10px">下一页</button>
+    <button class="guide" type="button" style="font-size: 10px">最末页</button>
+
+</div>
+<hr>
+<div style="width: inherit;height: 10%" align="center">
+    <span style="font-size: 20px">个人信息</span> <br>
+    姓名:陈中&nbsp;&nbsp;&nbsp;性别:男  &nbsp;&nbsp;&nbsp; 用户名:chenzhong   &nbsp;&nbsp;&nbsp;邮箱:18300290019@fudan.edu.cn &nbsp;&nbsp;&nbsp; 地点:复旦大学
+    <hr>
+    <span style="font-size: 30px">收藏的艺术品</span> <br>
+</div>
+
+<div style="width: 25%;height:25%;float: left;" class="show" align="center" id="first">
+    名称:月光下的船<br>
+    作者:艺术家一<br>
+    描述:描述了月光下的船<br>
+    <a href="商品展示页.html" class="guide">查看详情</a><br>
+    <button class="guide" type="button" onclick="deleteFirst()">删除</button>
+
+
+
+
+</div>
+
+<div style="width: 25%;margin-left:8%;height:25%;float: left;" class="show" align="center" id="second">
+    名称:房子<br>
+    作者:艺术家二<br>
+    描述:描述了房子<br>
+    <a href="商品展示页.html" class="guide">查看详情</a><br>
+    <button class="guide" type="button" onclick="deleteSecond()">删除</button>
+
+
+
+</div>
+
+<div style="width: 25%;margin-left:8%;height:25%;float: left;" class="show" align="center" id="third">
+    名称:苹果<br>
+    作者:艺术家三<br>
+    描述:描述了苹果<br>
+    <a href="商品展示页.html" class="guide">查看详情</a><br>
+    <button class="guide" type="button" onclick="deleteThird()">删除</button>
+
+
+
+</div>
+
+<div style="width: 100%;height: auto;position: fixed;bottom:0;background-color: black;color: white;float: left" align="center" >
+    Pictures from author.maintained by chen zhong.All rights reserved.
+</div>
+
+
+
+
+
+</body>
+</html>
